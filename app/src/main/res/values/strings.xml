@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ChapterAndroidTraining</string>
+    <string name="test_commit">Test commit</string>
 </resources>
