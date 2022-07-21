@@ -87,11 +87,10 @@
             android:background="@drawable/main_background_edittext"
             android:hint="@string/main_ngaynhapkho"
             android:paddingStart="16dp"
-            android:paddingEnd="16dp"
             android:paddingTop="14dp"
+            android:paddingEnd="16dp"
             android:paddingBottom="14dp"
             android:textSize="14sp" />
-
     </LinearLayout>
 
     <LinearLayout
