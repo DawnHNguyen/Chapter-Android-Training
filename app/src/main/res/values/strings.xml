@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">ChapterAndroidTraining</string>
+    <string name="app_name">Chapter Android</string>
+    <string name="all_heading">Thông tin sản phẩm nhập kho</string>
+    <string name="all_loaisanpham">Loại sản phẩm</string>
+    <string name="all_tensanpham">Tên sản phẩm</string>
+    <string name="all_soluong">Số lượng</string>
+    <string name="all_nhasanxuat">Nhà sản xuất</string>
+    <string name="all_ngaynhapkho">Ngày nhập kho</string>
 </resources>
