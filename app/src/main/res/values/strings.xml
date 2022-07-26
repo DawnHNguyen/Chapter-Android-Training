@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ChapterAndroidTraining</string>
     <string name="main_thongtinsanphamnhapkho">Thông tin sản phẩm nhập kho</string>
+    <string name="main_danhapkhothanhcong">Đã nhập kho thành công</string>
     <string name="main_loaisanpham">Loại sản phẩm</string>
     <string name="main_tensanpham">Tên sản phẩm</string>
     <string name="main_soluong">Số lượng</string>
@@ -8,4 +9,6 @@
     <string name="main_ngaynhapkho">Ngày nhập kho</string>
     <string name="main_confirm">Confirm</string>
     <string name="main_back">Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
