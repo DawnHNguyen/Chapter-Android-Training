@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="edittext_paddingHorizontal">16dp</dimen>
-    <dimen name="edittext_paddingVertical">14dp</dimen>
+    <dimen name="padding_main_inputInfo_horizontal">16dp</dimen>
+    <dimen name="padding_main_inputInfo_vertical">14dp</dimen>
+    <dimen name="padding_main_title_horizontal">16dp</dimen>
+
+    <dimen name="size_text_main_title">16sp</dimen>
+    <dimen name="size_text_main_inputInfo">14sp</dimen>
+
+    <dimen name="margin_main_title_top">62dp</dimen>
+    <dimen name="margin_main_inputInfo_top">141dp</dimen>
+    <dimen name="margin_main_other_inputInfo_top">20dp</dimen>
+    <dimen name="margin_main_button_end">20.5dp</dimen>
+    <dimen name="margin_main_button_top">80dp</dimen>
+    <dimen name="margin_main_button_start">20.5dp</dimen>
+
+    <dimen name="layout_height_main_inputInfo">44dp</dimen>
+    <dimen name="layout_height_main_button">40dp</dimen>
 </resources>

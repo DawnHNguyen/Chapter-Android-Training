@@ -17,8 +17,8 @@ class MainActivity2 : AppCompatActivity() {
 
         binding.buttonMain2Back.setOnClickListener {
             binding.textviewMain2Title.text = getString(R.string.main_thongtinsanphamnhapkho)
-            binding.edittextTensanpham.text.clear()
-            binding.edittextNhasanxuat.text.clear()
+            binding.edittextMain2Tensanpham.text.clear()
+            binding.edittextMain2Nhasanxuat.text.clear()
             binding.edittextMain2Soluong.text.clear()
             binding.edittextMain2Ngaynhapkho.text.clear()
             binding.editextMain2Loaisanpham.text.clear()
