@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize_main_textview">16sp</dimen>
+
+    <dimen name="margintop_main_edittextfirst">60dp</dimen>
+    <dimen name="paddingstart_main_edittext">16dp</dimen>
+    <dimen name="paddingvertical_main_edittext">14dp</dimen>
+    <dimen name="textsize_main_edittext">14sp</dimen>
+    <dimen name="marginhorizontal_main_edittext">16dp</dimen>
+    <dimen name="margintop_main_edittext">20dp</dimen>
+
+    <dimen name="paddingvertical_main_button">12dp</dimen>
+    <dimen name="width_main_button">120dp</dimen>
+    <dimen name="marrgintop_main_button">68dp</dimen>
+    <dimen name="textsize_main_button">14sp</dimen>
+</resources>

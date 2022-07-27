@@ -1,123 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/main_background"
-    android:scrollbars="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textview_main_heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="86dp"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColorHint="@color/black"
-        android:text="@string/main_heading"/>
-
-    <EditText
-        android:id="@+id/edittext_main_loaisanpham"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="60dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="@string/main_loaisanpham"
-        android:inputType="textPersonName"
-        android:padding="14dp"
-        android:textSize="14sp" />
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/main_background">
 
-    <EditText
-        android:id="@+id/edittext_main_tensanpham"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="16dp"
-        android:padding="14dp"
-        android:hint="@string/main_tensanpham"
-        android:textSize="14sp"
-        android:background="@color/white"
-        android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/textview_main_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_heading"
+            android:textSize="@dimen/textsize_main_textview"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.106" />
 
-    <EditText
-        android:id="@+id/edittext_main_soluong"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="16dp"
-        android:padding="14dp"
-        android:ems="10"
-        android:hint="@string/main_soluong"
-        android:textSize="14sp"
-        android:background="@color/white"
-        android:inputType="number" />
+        <EditText
+            style="@style/edittext_main"
+            android:id="@+id/edittext_main_loaisanpham"
+            android:layout_marginTop="@dimen/margintop_main_edittextfirst"
+            android:inputType="textPersonName"
+            android:hint="@string/main_loaisanpham"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_heading" />
 
-    <EditText
-        android:id="@+id/edittext_main_ngaysanxuat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="16dp"
-        android:padding="14dp"
-        android:ems="10"
-        android:hint="@string/main_nhasanxuat"
-        android:textSize="14sp"
-        android:background="@color/white"
-        android:inputType="textPersonName" />
+        <EditText
+            style="@style/edittext_main"
+            android:id="@+id/edittext_main_tensanpham"
+            android:inputType="textPersonName"
+            android:hint="@string/main_tensanpham"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_loaisanpham" />
 
-    <EditText
-        android:id="@+id/edittext_main_ngaynhapkho"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="16dp"
-        android:padding="14dp"
-        android:ems="10"
-        android:hint="@string/main_ngaynhapkho"
-        android:textSize="14sp"
-        android:background="@color/white"
-        android:inputType="date" />
+        <EditText
+            style="@style/edittext_main"
+            android:id="@+id/edittext_main_soluong"
+            android:inputType="number"
+            android:hint="@string/main_soluong"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_tensanpham" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="22dp">
+        <EditText
+            style="@style/edittext_main"
+            android:id="@+id/edittext_main_nhasanxuat"
+            android:inputType="textPersonName"
+            android:hint="@string/main_nhasanxuat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_soluong" />
+
+        <EditText
+            style="@style/edittext_main"
+            android:id="@+id/edittext_main_ngaynhapkho"
+            android:inputType="textPersonName"
+            android:hint="@string/main_ngaynhapkho"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_nhasanxuat" />
 
         <Button
             android:id="@+id/button_main_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingVertical="12dp"
-            android:paddingHorizontal="46dp"
-            android:layout_marginLeft="47dp"
-            android:layout_marginRight="41dp"
-            android:textAllCaps="false"
-            android:textStyle="normal"
-            android:backgroundTint="@color/main_button"
-            android:text="Back" />
+            style="@style/button_main"
+            android:text="@string/main_back"
+            app:layout_constraintEnd_toStartOf="@id/button_main_confirm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_ngaynhapkho" />
 
         <Button
             android:id="@+id/button_main_confirm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingVertical="12dp"
-            android:paddingHorizontal="35dp"
-            android:layout_marginRight="47dp"
-            android:textAllCaps="false"
-            android:textStyle="normal"
-            android:backgroundTint="@color/main_button"
-            android:text="Confirm" />
-    </LinearLayout>
+            style="@style/button_main"
+            android:text="@string/main_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_main_back"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_ngaynhapkho" />
 
 
-</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
