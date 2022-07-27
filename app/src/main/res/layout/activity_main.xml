@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -23,8 +21,8 @@
             app:layout_constraintVertical_bias="0.106" />
 
         <EditText
-            style="@style/edittext_main"
             android:id="@+id/edittext_main_loaisanpham"
+            style="@style/edittext_main"
             android:layout_marginTop="@dimen/margintop_main_edittextfirst"
             android:inputType="textPersonName"
             android:hint="@string/main_loaisanpham"
@@ -33,32 +31,32 @@
             app:layout_constraintTop_toBottomOf="@+id/textview_main_heading" />
 
         <EditText
-            style="@style/edittext_main"
             android:id="@+id/edittext_main_tensanpham"
+            style="@style/edittext_main"
             android:inputType="textPersonName"
             android:hint="@string/main_tensanpham"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edittext_main_loaisanpham" />
 
         <EditText
-            style="@style/edittext_main"
             android:id="@+id/edittext_main_soluong"
+            style="@style/edittext_main"
             android:inputType="number"
             android:hint="@string/main_soluong"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edittext_main_tensanpham" />
 
         <EditText
-            style="@style/edittext_main"
             android:id="@+id/edittext_main_nhasanxuat"
+            style="@style/edittext_main"
             android:inputType="textPersonName"
             android:hint="@string/main_nhasanxuat"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edittext_main_soluong" />
 
         <EditText
-            style="@style/edittext_main"
             android:id="@+id/edittext_main_ngaynhapkho"
+            style="@style/edittext_main"
             android:inputType="textPersonName"
             android:hint="@string/main_ngaynhapkho"
             app:layout_constraintHorizontal_bias="0.497"
@@ -83,4 +81,3 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
