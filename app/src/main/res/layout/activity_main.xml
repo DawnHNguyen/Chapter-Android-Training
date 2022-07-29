@@ -22,9 +22,8 @@
 
         <EditText
             android:id="@+id/edittext_main_loaisanpham"
-            style="@style/edittext_main"
+            style="@style/EditTextMain"
             android:layout_marginTop="@dimen/margintop_main_edittextfirst"
-            android:inputType="textPersonName"
             android:hint="@string/main_loaisanpham"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,15 +31,14 @@
 
         <EditText
             android:id="@+id/edittext_main_tensanpham"
-            style="@style/edittext_main"
-            android:inputType="textPersonName"
+            style="@style/EditTextMain"
             android:hint="@string/main_tensanpham"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edittext_main_loaisanpham" />
 
         <EditText
             android:id="@+id/edittext_main_soluong"
-            style="@style/edittext_main"
+            style="@style/EditTextMain"
             android:inputType="number"
             android:hint="@string/main_soluong"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,16 +46,14 @@
 
         <EditText
             android:id="@+id/edittext_main_nhasanxuat"
-            style="@style/edittext_main"
-            android:inputType="textPersonName"
+            style="@style/EditTextMain"
             android:hint="@string/main_nhasanxuat"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edittext_main_soluong" />
 
         <EditText
             android:id="@+id/edittext_main_ngaynhapkho"
-            style="@style/edittext_main"
-            android:inputType="textPersonName"
+            style="@style/EditTextMain"
             android:hint="@string/main_ngaynhapkho"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -65,16 +61,16 @@
 
         <Button
             android:id="@+id/button_main_back"
-            style="@style/button_main"
-            android:text="@string/main_back"
+            style="@style/ButtonMain"
+            android:text="@string/button_main_back"
             app:layout_constraintEnd_toStartOf="@id/button_main_confirm"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edittext_main_ngaynhapkho" />
 
         <Button
             android:id="@+id/button_main_confirm"
-            style="@style/button_main"
-            android:text="@string/main_confirm"
+            style="@style/ButtonMain"
+            android:text="@string/button_main_confirm"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_main_back"
             app:layout_constraintTop_toBottomOf="@+id/edittext_main_ngaynhapkho" />

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val button_confirm : Button = findViewById(R.id.button_main_confirm)
         button_confirm.setOnClickListener {
             val textview : TextView = findViewById(R.id.textview_main_heading)
-            textview.text = getString(R.string.main_confirmed)
+            textview.text = getString(R.string.heading_main_clickconfirmbutton)
         }
         val button_back : Button = findViewById(R.id.button_main_back)
         button_back.setOnClickListener {

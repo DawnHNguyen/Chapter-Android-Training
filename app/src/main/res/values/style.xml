@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="main">
-        <item name="backgroundColor">@color/main_background</item>
-    </style>
-
-    <style name="edittext_main">
+    <style name="EditTextMain">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingTop">@dimen/paddingvertical_main_edittext</item>
@@ -17,7 +13,7 @@
         <item name="android:textSize">@dimen/textsize_main_edittext</item>
     </style>
 
-    <style name="button_main">
+    <style name="ButtonMain">
         <item name="textAllCaps">false</item>
         <item name="android:textSize">@dimen/textsize_main_button</item>
         <item name="android:layout_width">@dimen/width_main_button</item>
