@@ -8,5 +8,5 @@
     <string name="main_ngaynhapkho">Ngày nhập kho</string>
     <string name="button_main_back">Back</string>
     <string name="button_main_confirm">Confirm</string>
-    <string name="heading_main_clickconfirmbutton">Đã nhập kho thành công</string>
+    <string name="main_heading_confirmed">Đã nhập kho thành công</string>
 </resources>
