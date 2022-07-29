@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black40"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textview_info_heading"
+            android:layout_width="211dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginEnd="82dp"
+            android:text="Thông tin sản phẩm nhập kho"
+            android:textFontWeight="400"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:layout_width="343dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:text="    Loại sản phẩm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_info_heading"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:layout_width="343dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:text="    Tên sản phẩm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_info_heading"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:layout_width="343dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="252dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:text="    Số lượng"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_info_heading"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:layout_width="343dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:text="    Nhà sản xuất"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_info_heading"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/import_text"
+            android:layout_width="343dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="316dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:text="    Ngày nhập kho"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_info_heading"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="41dp"
+            android:text="Back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/import_text"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="47dp"
+            android:text="Confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/import_text"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
