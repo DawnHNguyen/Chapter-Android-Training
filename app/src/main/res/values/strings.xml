@@ -6,4 +6,7 @@
     <string name="main_soluong">Số lượng</string>
     <string name="main_nhasanxuat">Nhà sản xuất</string>
     <string name="main_ngaynhapkho">Ngày nhập kho</string>
+    <string name="button_main_back">Back</string>
+    <string name="button_main_confirm">Confirm</string>
+    <string name="main_heading_confirmed">Đã nhập kho thành công</string>
 </resources>
