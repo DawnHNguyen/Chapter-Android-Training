@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="EditTextMain">
+    <style name="EditTextInformationItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">@dimen/paddingvertical_main_edittext</item>
-        <item name="android:paddingBottom">@dimen/paddingvertical_main_edittext</item>
-        <item name="android:paddingStart">@dimen/paddingstart_main_edittext</item>
-        <item name="android:layout_marginStart">@dimen/marginhorizontal_main_edittext</item>
-        <item name="android:layout_marginEnd">@dimen/marginhorizontal_main_edittext</item>
-        <item name="android:layout_marginTop">@dimen/margintop_main_edittext</item>
+        <item name="android:paddingTop">@dimen/paddingvertical_informationitem_edittext</item>
+        <item name="android:paddingBottom">@dimen/paddingvertical_informationitem_edittext</item>
+        <item name="android:paddingStart">@dimen/paddingstart_informationitem_edittext</item>
+        <item name="android:layout_marginStart">@dimen/marginhorizontal_informationitem_edittext</item>
+        <item name="android:layout_marginEnd">@dimen/marginhorizontal_informationitem_edittext</item>
+        <item name="android:layout_marginTop">@dimen/margintop_informationitem_edittext</item>
         <item name="android:background">@color/white</item>
-        <item name="android:textSize">@dimen/textsize_main_edittext</item>
+        <item name="android:textSize">@dimen/textsize_informationitem_edittext</item>
     </style>
 
-    <style name="ButtonMain">
+    <style name="ButtonInformationItem">
         <item name="textAllCaps">false</item>
-        <item name="android:textSize">@dimen/textsize_main_button</item>
-        <item name="android:layout_width">@dimen/width_main_button</item>
+        <item name="android:textSize">@dimen/textsize_informationitem_button</item>
+        <item name="android:layout_width">@dimen/width_informationitem_button</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">@dimen/paddingvertical_main_button</item>
-        <item name="android:paddingBottom">@dimen/paddingvertical_main_button</item>
-        <item name="android:layout_marginTop">@dimen/marrgintop_main_button</item>
-        <item name="backgroundTint">@color/main_button</item>
+        <item name="android:paddingTop">@dimen/paddingvertical_informationitem_button</item>
+        <item name="android:paddingBottom">@dimen/paddingvertical_informationitem_button</item>
+        <item name="android:layout_marginTop">@dimen/marrgintop_informationitem_button</item>
+        <item name="backgroundTint">@color/informationitem_button</item>
     </style>
 </resources>

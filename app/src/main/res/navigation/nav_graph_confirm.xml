@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_confirm"
+    app:startDestination="@id/informationItemFragment">
+
+    <fragment
+        android:id="@+id/informationItemFragment"
+        android:name="com.example.chapterandroidtraining.InformationItemFragment"
+        android:label="fragment_information_item"
+        tools:layout="@layout/fragment_information_item" >
+        <action
+            android:id="@+id/action_informationItemFragment_to_confirmedFragment"
+            app:destination="@id/confirmedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmedFragment"
+        android:name="com.example.chapterandroidtraining.ConfirmedFragment"
+        android:label="fragment_confirmed"
+        tools:layout="@layout/fragment_confirmed">
+        <argument
+            android:name="textview_navgraph_loaisanpham"
+            app:argType="string"
+            android:defaultValue="Con người">
+        </argument>
+
+        <argument android:name="textview_navgraph_tensanpham"
+            app:argType="string"
+            android:defaultValue="Đỗ Ngọc Nhi"/>
+
+        <argument android:name="textview_navgraph_soluong"
+            app:argType="string"
+            android:defaultValue="1"/>
+
+        <argument android:name="textview_navgraph_nhasanxuat"
+            app:argType="string"
+            android:defaultValue="Ba má"/>
+
+        <argument android:name="textview_navgraph_ngaynhapkho"
+            app:argType="string"
+            android:defaultValue="01/10/2002"/>
+    </fragment>
+</navigation>

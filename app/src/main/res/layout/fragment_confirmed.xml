@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmedFragment"
+    android:background="@color/informationitem_background">
+
+    <TextView
+        android:id="@+id/textview_confirm_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informationitem_heading_confirmed"
+        android:textSize="@dimen/textsize_informationitem_textview"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/textview_confirm_loaisanpham"
+        style="@style/EditTextInformationItem"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="@dimen/margintop_informationitem_edittextfirst"
+        android:hint="@string/informationitem_loaisanpham"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_confirm_heading" />
+
+    <TextView
+        android:id="@+id/textview_confirm_tensanpham"
+        style="@style/EditTextInformationItem"
+        android:background="@drawable/custom_input"
+        android:hint="@string/informationitem_tensanpham"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_confirm_loaisanpham" />
+
+    <TextView
+        android:id="@+id/textview_confirm_soluong"
+        style="@style/EditTextInformationItem"
+        android:background="@drawable/custom_input"
+        android:inputType="number"
+        android:hint="@string/informationitem_soluong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_confirm_tensanpham" />
+
+    <TextView
+        android:id="@+id/textview_confirm_nhasanxuat"
+        style="@style/EditTextInformationItem"
+        android:background="@drawable/custom_input"
+        android:hint="@string/informationitem_nhasanxuat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_confirm_soluong" />
+
+    <TextView
+        android:id="@+id/textview_confirm_ngaynhapkho"
+        style="@style/EditTextInformationItem"
+        android:background="@drawable/custom_input"
+        android:hint="@string/informationitem_ngaynhapkho"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_confirm_nhasanxuat" />
+
+    <Button
+        android:id="@+id/button_confirm_back"
+        style="@style/ButtonInformationItem"
+        android:text="@string/button_informationitem_back"
+        app:layout_constraintEnd_toStartOf="@id/button_confirm_confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_confirm_ngaynhapkho" />
+
+    <Button
+        android:id="@+id/button_confirm_confirm"
+        style="@style/ButtonInformationItem"
+        android:text="@string/button_informationitem_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_confirm_back"
+        app:layout_constraintTop_toBottomOf="@+id/textview_confirm_ngaynhapkho" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
