@@ -15,11 +15,11 @@ import androidx.navigation.findNavController
 
 class InformationItemFragment : Fragment() {
     private lateinit var textviewHeading: TextView
-    private lateinit var edittextLoaisanpham: EditText
-    private lateinit var edittextTensanpham: EditText
-    private lateinit var edittextSoluong: EditText
-    private lateinit var edittextNhasanxuat: EditText
-    private lateinit var edittextNgaynhapkho : EditText
+    private lateinit var edittextProductType: EditText
+    private lateinit var edittextProductName: EditText
+    private lateinit var edittextProductAmount: EditText
+    private lateinit var edittextProducer: EditText
+    private lateinit var edittextInputDate : EditText
     private lateinit var buttonBack: Button
     private lateinit var buttonConfirm: Button
 
@@ -33,23 +33,23 @@ class InformationItemFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_information_item, container, false)
         textviewHeading = view.findViewById(R.id.textview_informationitem_heading)
-        edittextLoaisanpham = view.findViewById(R.id.edittext_informationitem_loaisanpham)
-        edittextTensanpham = view.findViewById(R.id.edittext_informationitem_tensanpham)
-        edittextSoluong = view.findViewById(R.id.edittext_informationitem_soluong)
-        edittextNhasanxuat = view.findViewById(R.id.edittext_informationitem_nhasanxuat)
-        edittextNgaynhapkho = view.findViewById(R.id.edittext_informationitem_ngaynhapkho)
+        edittextProductType = view.findViewById(R.id.edittext_informationitem_producttype)
+        edittextProductName = view.findViewById(R.id.edittext_informationitem_productname)
+        edittextProductAmount = view.findViewById(R.id.edittext_informationitem_productamount)
+        edittextProducer = view.findViewById(R.id.edittext_informationitem_producer)
+        edittextInputDate = view.findViewById(R.id.edittext_informationitem_inputdate)
         buttonBack = view.findViewById(R.id.button_informationitem_back)
         buttonConfirm = view.findViewById(R.id.button_informationitem_confirm)
 
         buttonConfirm.setOnClickListener {
-            val loaisanpham: String = edittextLoaisanpham.text.toString()
-            val tensanpham: String = edittextNhasanxuat.text.toString()
-            val soluong: String = edittextSoluong.text.toString()
-            val nhasanxuat: String = edittextNhasanxuat.text.toString()
-            val ngaynhapkho: String = edittextNgaynhapkho.text.toString()
+            val productType: String = edittextProductType.text.toString()
+            val productName: String = edittextProducer.text.toString()
+            val productAmount: String = edittextProductAmount.text.toString()
+            val producer: String = edittextProducer.text.toString()
+            val inputDate: String = edittextInputDate.text.toString()
 
             val action = InformationItemFragmentDirections.actionInformationItemFragmentToConfirmedFragment(
-            loaisanpham, tensanpham, soluong, nhasanxuat, ngaynhapkho)
+            productType, productName, productAmount, producer, inputDate)
             view.findNavController().navigate(action)
 
         }

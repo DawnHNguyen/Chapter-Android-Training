@@ -21,48 +21,48 @@
         app:layout_constraintVertical_bias="0.106" />
 
     <EditText
-        android:id="@+id/edittext_informationitem_loaisanpham"
+        android:id="@+id/edittext_informationitem_producttype"
         style="@style/EditTextInformationItem"
         android:background="@drawable/custom_input"
         android:layout_marginTop="@dimen/margintop_informationitem_edittextfirst"
-        android:hint="@string/informationitem_loaisanpham"
+        android:hint="@string/informationitem_producttype"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_informationitem_heading" />
 
     <EditText
-        android:id="@+id/edittext_informationitem_tensanpham"
+        android:id="@+id/edittext_informationitem_productname"
         style="@style/EditTextInformationItem"
         android:background="@drawable/custom_input"
-        android:hint="@string/informationitem_tensanpham"
+        android:hint="@string/informationitem_productname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_loaisanpham" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_producttype" />
 
     <EditText
-        android:id="@+id/edittext_informationitem_soluong"
+        android:id="@+id/edittext_informationitem_productamount"
         style="@style/EditTextInformationItem"
         android:background="@drawable/custom_input"
         android:inputType="number"
-        android:hint="@string/informationitem_soluong"
+        android:hint="@string/informationitem_productamount"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_tensanpham" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_productname" />
 
     <EditText
-        android:id="@+id/edittext_informationitem_nhasanxuat"
+        android:id="@+id/edittext_informationitem_producer"
         style="@style/EditTextInformationItem"
         android:background="@drawable/custom_input"
-        android:hint="@string/informationitem_nhasanxuat"
+        android:hint="@string/informationitem_producer"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_soluong" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_productamount" />
 
     <EditText
-        android:id="@+id/edittext_informationitem_ngaynhapkho"
+        android:id="@+id/edittext_informationitem_inputdate"
         style="@style/EditTextInformationItem"
         android:background="@drawable/custom_input"
-        android:hint="@string/informationitem_ngaynhapkho"
+        android:hint="@string/informationitem_inputdate"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_nhasanxuat" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_producer" />
 
     <Button
         android:id="@+id/button_informationitem_back"
@@ -70,7 +70,7 @@
         android:text="@string/button_informationitem_back"
         app:layout_constraintEnd_toStartOf="@id/button_informationitem_confirm"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_ngaynhapkho" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_inputdate" />
 
     <Button
         android:id="@+id/button_informationitem_confirm"
@@ -78,7 +78,7 @@
         android:text="@string/button_informationitem_confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_informationitem_back"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_ngaynhapkho" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_informationitem_inputdate" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

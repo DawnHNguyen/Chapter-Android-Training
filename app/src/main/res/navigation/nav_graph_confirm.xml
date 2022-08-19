@@ -19,26 +19,19 @@
         android:name="com.example.chapterandroidtraining.ConfirmedFragment"
         android:label="fragment_confirmed"
         tools:layout="@layout/fragment_confirmed">
-        <argument
-            android:name="textview_navgraph_loaisanpham"
-            app:argType="string"
-            android:defaultValue="Con người">
-        </argument>
+        <argument android:name="produceType"
+            app:argType="string"/>
 
-        <argument android:name="textview_navgraph_tensanpham"
-            app:argType="string"
-            android:defaultValue="Đỗ Ngọc Nhi"/>
+        <argument android:name="productName"
+            app:argType="string" />
 
-        <argument android:name="textview_navgraph_soluong"
-            app:argType="string"
-            android:defaultValue="1"/>
+        <argument android:name="productAmount"
+            app:argType="string"/>
 
-        <argument android:name="textview_navgraph_nhasanxuat"
-            app:argType="string"
-            android:defaultValue="Ba má"/>
+        <argument android:name="producer"
+            app:argType="string"/>
 
-        <argument android:name="textview_navgraph_ngaynhapkho"
-            app:argType="string"
-            android:defaultValue="01/10/2002"/>
+        <argument android:name="inputDate"
+            app:argType="string"/>
     </fragment>
 </navigation>

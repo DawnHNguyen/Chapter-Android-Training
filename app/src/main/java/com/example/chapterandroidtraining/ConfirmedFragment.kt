@@ -12,12 +12,11 @@ import androidx.navigation.fragment.navArgs
 class ConfirmedFragment : Fragment() {
 
     val args: ConfirmedFragmentArgs by navArgs()
-    lateinit var fragmentConfirm: ConfirmedFragment
-    lateinit var textviewLoaisanpham: TextView
-    lateinit var textViewTensanpham: TextView
-    lateinit var textViewSoluong: TextView
-    lateinit var textViewNhasanxuat: TextView
-    lateinit var textviewNgaynhapkho: TextView
+    lateinit var textviewProductType: TextView
+    lateinit var textviewProductName: TextView
+    lateinit var textviewProductAmount: TextView
+    lateinit var textviewProducer: TextView
+    lateinit var textviewInputDate: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,22 +27,22 @@ class ConfirmedFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_confirmed, container, false)
-        textviewLoaisanpham = view.findViewById(R.id.textview_confirm_loaisanpham)
-        textViewTensanpham = view.findViewById(R.id.textview_confirm_tensanpham)
-        textViewSoluong = view.findViewById(R.id.textview_confirm_soluong)
-        textViewNhasanxuat = view.findViewById(R.id.textview_confirm_nhasanxuat)
-        textviewNgaynhapkho = view.findViewById(R.id.textview_confirm_ngaynhapkho)
+        textviewProductType = view.findViewById(R.id.textview_confirm_producttype)
+        textviewProductName = view.findViewById(R.id.textview_confirm_productname)
+        textviewProductAmount = view.findViewById(R.id.textview_confirm_productamount)
+        textviewProducer = view.findViewById(R.id.textview_confirm_producer)
+        textviewInputDate = view.findViewById(R.id.textview_confirm_inputdate)
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        textviewLoaisanpham.setText(args.textviewNavgraphLoaisanpham)
-        textViewTensanpham.setText(args.textviewNavgraphTensanpham)
-        textViewSoluong.setText(args.textviewNavgraphSoluong)
-        textViewNhasanxuat.setText(args.textviewNavgraphNhasanxuat)
-        textviewNgaynhapkho.setText(args.textviewNavgraphNgaynhapkho)
+        textviewProductType.setText(args.produceType)
+        textviewProductName.setText(args.productName)
+        textviewProductAmount.setText(args.productAmount)
+        textviewProducer.setText(args.producer)
+        textviewInputDate.setText(args.inputDate)
     }
 
 }
