@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Chapter Android</string>
-    <string name="main_heading">Thông tin sản phẩm nhập kho</string>
-    <string name="main_loaisanpham">Loại sản phẩm</string>
-    <string name="main_tensanpham">Tên sản phẩm</string>
-    <string name="main_soluong">Số lượng</string>
-    <string name="main_nhasanxuat">Nhà sản xuất</string>
-    <string name="main_ngaynhapkho">Ngày nhập kho</string>
-    <string name="button_main_back">Back</string>
-    <string name="button_main_confirm">Confirm</string>
-    <string name="main_heading_confirmed">Đã nhập kho thành công</string>
+    <string name="informationitem_heading">Thông tin sản phẩm nhập kho</string>
+    <string name="informationitem_producttype">Loại sản phẩm</string>
+    <string name="informationitem_productname">Tên sản phẩm</string>
+    <string name="informationitem_productamount">Số lượng</string>
+    <string name="informationitem_producer">Nhà sản xuất</string>
+    <string name="informationitem_inputdate">Ngày nhập kho</string>
+    <string name="button_informationitem_back">Back</string>
+    <string name="button_informationitem_confirm">Confirm</string>
+    <string name="informationitem_heading_confirmed">Đã nhập kho thành công</string>
 </resources>

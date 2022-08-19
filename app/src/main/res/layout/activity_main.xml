@@ -5,75 +5,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        android:background="@color/main_background">
-
-        <TextView
-            android:id="@+id/textview_main_heading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_heading"
-            android:textSize="@dimen/textsize_main_textview"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.106" />
-
-        <EditText
-            android:id="@+id/edittext_main_loaisanpham"
-            style="@style/EditTextMain"
-            android:layout_marginTop="@dimen/margintop_main_edittextfirst"
-            android:hint="@string/main_loaisanpham"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textview_main_heading" />
-
-        <EditText
-            android:id="@+id/edittext_main_tensanpham"
-            style="@style/EditTextMain"
-            android:hint="@string/main_tensanpham"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_main_loaisanpham" />
-
-        <EditText
-            android:id="@+id/edittext_main_soluong"
-            style="@style/EditTextMain"
-            android:inputType="number"
-            android:hint="@string/main_soluong"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_main_tensanpham" />
-
-        <EditText
-            android:id="@+id/edittext_main_nhasanxuat"
-            style="@style/EditTextMain"
-            android:hint="@string/main_nhasanxuat"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_main_soluong" />
-
-        <EditText
-            android:id="@+id/edittext_main_ngaynhapkho"
-            style="@style/EditTextMain"
-            android:hint="@string/main_ngaynhapkho"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_main_nhasanxuat" />
-
-        <Button
-            android:id="@+id/button_main_back"
-            style="@style/ButtonMain"
-            android:text="@string/button_main_back"
-            app:layout_constraintEnd_toStartOf="@id/button_main_confirm"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_main_ngaynhapkho" />
-
-        <Button
-            android:id="@+id/button_main_confirm"
-            style="@style/ButtonMain"
-            android:text="@string/button_main_confirm"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/button_main_back"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_main_ngaynhapkho" />
+        android:background="@color/informationitem_background">
 
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph_confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
