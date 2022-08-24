@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:paddingHorizontal="@dimen/padding_main_title_horizontal">
+
+        <TextView
+            android:id="@+id/textview_confirm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_main_title_top"
+            android:text="@string/main_danhapkhothanhcong"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_text_main_title"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_confirm_loaisanpham"
+            style="@style/EditTextFragment"
+            android:layout_marginTop="@dimen/margin_main_inputInfo_top"
+            android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
+            android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
+            android:text="@string/main_loaisanpham"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_confirm_tensanpham"
+            style="@style/EditTextFragment"
+            android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
+            android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
+            android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
+            android:text="@string/main_tensanpham"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_confirm_loaisanpham" />
+
+        <TextView
+            android:id="@+id/textview_confirm_soluong"
+            style="@style/EditTextFragment"
+            android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
+            android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
+            android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
+            android:text="@string/main_soluong"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_confirm_tensanpham" />
+
+        <TextView
+            android:id="@+id/textview_confirm_nhasanxuat"
+            style="@style/EditTextFragment"
+            android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
+            android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
+            android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
+            android:text="@string/main_nhasanxuat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_confirm_soluong" />
+
+        <TextView
+            android:id="@+id/textview_confirm_ngaynhapkho"
+            style="@style/EditTextFragment"
+            android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
+            android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
+            android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
+            android:text="@string/main_ngaynhapkho"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_confirm_nhasanxuat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

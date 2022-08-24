@@ -14,10 +14,10 @@ fun Activity.showToast(msg: String){
     Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
 }
 
-fun EditText.isGone(){
+fun EditText.setGone(){
     this.visibility = View.GONE
 }
 
-fun EditText.isVisible(){
+fun EditText.setVisible(){
     this.visibility = View.VISIBLE
 }

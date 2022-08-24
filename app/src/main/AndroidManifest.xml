@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.chapterandroidtraining">
 
-    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
