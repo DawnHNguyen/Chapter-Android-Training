@@ -13,7 +13,7 @@
         android:paddingHorizontal="@dimen/padding_main_title_horizontal">
 
         <TextView
-            android:id="@+id/textview_main2_title"
+            android:id="@+id/textview_input_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_main_title_top"
@@ -26,8 +26,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editext_main2_loaisanpham"
-            style="@style/main2_edittext"
+            android:id="@+id/editext_input_loaisanpham"
+            style="@style/EditTextFragment"
             android:layout_marginTop="@dimen/margin_main_inputInfo_top"
             android:hint="@string/main_loaisanpham"
             android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
@@ -36,66 +36,67 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/edittext_main2_tensanpham"
-            style="@style/main2_edittext"
+            android:id="@+id/edittext_input_tensanpham"
+            style="@style/EditTextFragment"
             android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
             android:hint="@string/main_tensanpham"
             android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
             android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editext_main2_loaisanpham" />
+            app:layout_constraintTop_toBottomOf="@id/editext_input_loaisanpham" />
 
         <EditText
-            android:id="@+id/edittext_main2_soluong"
-            style="@style/main2_edittext"
+            android:id="@+id/edittext_input_soluong"
+            style="@style/EditTextFragment"
             android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
             android:hint="@string/main_soluong"
+            android:inputType="number"
             android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
             android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edittext_main2_tensanpham" />
+            app:layout_constraintTop_toBottomOf="@id/edittext_input_tensanpham" />
 
         <EditText
-            android:id="@+id/edittext_main2_nhasanxuat"
-            style="@style/main2_edittext"
+            android:id="@+id/edittext_input_nhasanxuat"
+            style="@style/EditTextFragment"
             android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
             android:hint="@string/main_nhasanxuat"
             android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
             android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edittext_main2_soluong" />
+            app:layout_constraintTop_toBottomOf="@id/edittext_input_soluong" />
 
         <EditText
-            android:id="@+id/edittext_main2_ngaynhapkho"
-            style="@style/main2_edittext"
+            android:id="@+id/edittext_input_ngaynhapkho"
+            style="@style/EditTextFragment"
             android:layout_marginTop="@dimen/margin_main_other_inputInfo_top"
             android:hint="@string/main_ngaynhapkho"
             android:paddingHorizontal="@dimen/padding_main_inputInfo_horizontal"
             android:paddingVertical="@dimen/padding_main_inputInfo_vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edittext_main2_nhasanxuat" />
+            app:layout_constraintTop_toBottomOf="@id/edittext_input_nhasanxuat" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_main2_vertical"
+            android:id="@+id/guideline_input_vertical"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5" />
 
         <Button
-            android:id="@+id/button_main2_back"
-            style="@style/main2_button"
+            android:id="@+id/button_input_back"
+            style="@style/ButtonFragment"
             android:layout_marginEnd="@dimen/margin_main_button_end"
             android:text="@string/main_back"
-            app:layout_constraintEnd_toStartOf="@id/guideline_main2_vertical"
-            app:layout_constraintTop_toBottomOf="@id/edittext_main2_ngaynhapkho" />
+            app:layout_constraintEnd_toStartOf="@id/guideline_input_vertical"
+            app:layout_constraintTop_toBottomOf="@id/edittext_input_ngaynhapkho" />
 
         <Button
-            android:id="@+id/button_main2_confirm"
-            style="@style/main2_button"
+            android:id="@+id/button_input_confirm"
+            style="@style/ButtonFragment"
             android:layout_marginStart="@dimen/margin_main_button_start"
             android:text="@string/main_confirm"
-            app:layout_constraintStart_toEndOf="@id/guideline_main2_vertical"
-            app:layout_constraintTop_toBottomOf="@id/edittext_main2_ngaynhapkho" />
+            app:layout_constraintStart_toEndOf="@id/guideline_input_vertical"
+            app:layout_constraintTop_toBottomOf="@id/edittext_input_ngaynhapkho" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
